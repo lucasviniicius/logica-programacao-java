@@ -1,14 +1,18 @@
 package poo.aula01;
 
 public class PlantaCasa {
-    int metragem;
-    int numQuartos;
-    int numBanheiros;
-    String cor;
-    String material;
+    public double comprimento;
+    public double largura;
+    public int numQuartos;
+    public int numBanheiros;
+    public String cor;
+    public String material;
+
+    public double metrosQuadrados(double comprimento, double largura){
+        return comprimento * largura;
+    }
 
     public void construir(){
-        System.out.println("Metragem: " + metragem);
         System.out.println("Número de quartos: " + numQuartos);
         System.out.println("Número de banheiros: " + numBanheiros);
         System.out.println("Material: " + material);
