@@ -1,6 +1,6 @@
 package poo.aula01;
 
-public class PlantaCasa {
+public class PlantaCasa implements Construcao{
     public double comprimento;
     public double largura;
     public int numQuartos;
@@ -16,6 +16,11 @@ public class PlantaCasa {
         System.out.println("Número de quartos: " + numQuartos);
         System.out.println("Número de banheiros: " + numBanheiros);
         System.out.println("Material: " + material);
+    }
+
+    @Override
+    public double custoMetro(double custoPorMetro) {
+        return (comprimento * largura) * custoPorMetro;
     }
 
     public void pintar(){
